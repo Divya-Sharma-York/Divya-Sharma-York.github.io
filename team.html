@@ -53,25 +53,7 @@
                 <div class="team-row">
                     <!-- Left Column -->
                     
-<!-- Right Column -->
-                    <div class="postdocs-container" style="margin-left: 2rem;">
-                        <h3 class="role-heading" style="text-align: center;">Postdocs</h3>
-                        <div class="postdocs-grid" style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; justify-content: center;">
-                            <div class="team-postdocs">
-                                <div class="team-member">
-                                    <img src="images/Mohsen_photo.jpg" alt="Mohsen" />
-                                    <div class="team-member-info">
-                                        <h3>SeyedMohsen Hosseini</h3>
-                                        <p>PostDoc</p>
-                                        <p>PhD, Computer Science, Western University, Canada</p>
-                                        <p>Research Focus: GenAI in Healthcare</p>
-                                        <div class="social-links">
-                                            <a href="https://scholar.google.com/citations?user=CboUMQ8AAAAJ&hl=en"
-                                        target="_blank"><i class="fas fa-graduation-cap"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                     
 <!--
                             <div class="team-postdocs">
@@ -97,31 +79,64 @@
 
 
 
-                <!-- Row 2: Graduate Students -->
-                <h3 class="team-heading">Graduate Students</h3>
-                <div class="team-grid">
-                    <div class="team-member">
-                        <img src="/placeholder.svg?height=250&width=250" alt="Yilin Chen" />
-                        <div class="team-member-info">
-                            <h3>Yilin Chen, YorkU - PhD Candidate</h3>
-                            <p>Research: Machine Learning for personalized Medicine</p>
-                        </div>
-                    </div>
-                    <div class="team-member">
-                        <img src="/placeholder.svg?height=250&width=250" alt="Hamda Altaf" />
-                        <div class="team-member-info">
-                            <h3>Hamda Altaf, Univ of Toronto - M.Sc Candidate</h3>
-                            <p>Research: Machine Learning for Mental Health</p>
-                        </div>
-                    </div>
-		   <div class="team-member">
-                        <img src="/placeholder.svg?height=250&width=250" alt="Mark Asuncion" />
-                        <div class="team-member-info">
-                            <h3>Mark Asuncion, Univ of Toronto - M.Sc Candidate</h3>
-                            <p>Research: RL for Mental Health</p>
-                        </div>
-                    </div>
-                </div>
+
+<!-- Postdocs and Graduate Students Side by Side With Margins -->
+<div style="padding: 0 5%; box-sizing: border-box;">
+  <div class="team-row" style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
+
+    <!-- Postdocs (Left Column) -->
+    <div class="postdocs-container" style="flex: 0 0 30%;">
+      <h3 class="team-heading">Postdocs</h3>
+      <div class="team-grid" style="display: flex; flex-direction: column; gap: 1rem;">
+        <div class="team-member">
+          <img src="images/Mohsen_photo.jpg" alt="Mohsen" />
+          <div class="team-member-info">
+            <h3>SeyedMohsen Hosseini</h3>
+            <p>PostDoc</p>
+            <p>PhD, Computer Science, Western University</p>
+            <p>Research Focus: GenAI in Healthcare</p>
+            <div class="social-links">
+              <a href="https://scholar.google.com/citations?user=CboUMQ8AAAAJ&hl=en" target="_blank">
+                <i class="fas fa-graduation-cap"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Graduate Students (Right Column) -->
+    <div class="grads-container" style="flex: 0 0 65%;">
+      <h3 class="team-heading">Graduate Students</h3>
+      <div class="team-grid" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: flex-start;">
+        <div class="team-member" style="flex: 1 1 calc(33.33% - 1rem); min-width: 200px;">
+          <img src="/placeholder.svg?height=250&width=250" alt="Yilin Chen" />
+          <div class="team-member-info">
+            <h3>Yilin Chen, YorkU – PhD Candidate</h3>
+            <p>Research: ML for Personalized Medicine</p>
+          </div>
+        </div>
+        <div class="team-member" style="flex: 1 1 calc(33.33% - 1rem); min-width: 200px;">
+          <img src="/placeholder.svg?height=250&width=250" alt="Hamda Altaf" />
+          <div class="team-member-info">
+            <h3>Hamda Altaf, UofT – M.Sc Candidate</h3>
+            <p>Research: ML for Mental Health</p>
+          </div>
+        </div>
+        <div class="team-member" style="flex: 1 1 calc(33.33% - 1rem); min-width: 200px;">
+          <img src="/placeholder.svg?height=250&width=250" alt="Mark Asuncion" />
+          <div class="team-member-info">
+            <h3>Mark Asuncion, UofT – M.Sc Candidate</h3>
+            <p>Research: RL for Mental Health</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
 
                 <!-- Row 3: Research Assistants -->
                 <h3 class="team-heading">Research Assistants</h3>
