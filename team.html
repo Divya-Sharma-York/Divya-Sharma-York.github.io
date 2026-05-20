@@ -11,6 +11,69 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <style>
+        .postdocs-grid,
+        .graduate-grid,
+        .ra-grid {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .postdocs-grid {
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+        }
+
+        .graduate-grid {
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+        }
+
+        .ra-grid {
+            grid-template-columns: repeat(7, minmax(0, 1fr));
+        }
+
+        .postdocs-grid .team-member,
+        .graduate-grid .team-member,
+        .ra-grid .team-member {
+            width: 100%;
+            min-width: 0;
+        }
+
+        .postdocs-grid .team-member img,
+        .graduate-grid .team-member img,
+        .ra-grid .team-member img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+        }
+
+        @media (max-width: 1200px) {
+            .postdocs-grid,
+            .graduate-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+
+            .ra-grid {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .postdocs-grid,
+            .graduate-grid,
+            .ra-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            .postdocs-grid,
+            .graduate-grid,
+            .ra-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -87,7 +150,7 @@
   <div>
     <h3 class="team-heading">Postdocs</h3>
 
-    <div class="team-grid center-grid">
+    <div class="team-grid center-grid postdocs-grid">
       <!-- Postdoc 1 -->
       <div class="team-member">
         <img src="images/Mohsen_photo.jpg" alt="SeyedMohsen Hosseini" />
@@ -106,64 +169,93 @@
 
       <!-- Postdoc 2 -->
       <div class="team-member">
-        <img src="images/Layal_Jbara_Headshot.png" alt="Second Postdoc" />
+        <img src="images/SECOND_POSTDOC.jpg" alt="Second Postdoc" />
         <div class="team-member-info">
-          <h3>Layal Jbara</h3>
+          <h3>Second Postdoc Name</h3>
           <p>PostDoc</p>
-			<p>Co-Supervised with Dr. Mamatha Bhat</p>
-          <p>PhD, University of British Columbia</p>
-		  
-          <p>Research Focus: Foundational Models in Liver Transplant Research</p>
+          <p>PhD, XYZ University</p>
+          <p>Research Focus: Something here</p>
+        </div>
+      </div>
+
+      <div class="team-member">
+        <img src="/placeholder.svg?height=250&width=250" alt="Postdoc Placeholder 3" />
+        <div class="team-member-info">
+          <h3>Postdoc Name</h3>
+          <p>PostDoc</p>
+          <p>PhD, University Name</p>
+          <p>Research Focus: To be added</p>
+        </div>
+      </div>
+
+      <div class="team-member">
+        <img src="/placeholder.svg?height=250&width=250" alt="Postdoc Placeholder 4" />
+        <div class="team-member-info">
+          <h3>Postdoc Name</h3>
+          <p>PostDoc</p>
+          <p>PhD, University Name</p>
+          <p>Research Focus: To be added</p>
+        </div>
+      </div>
+
+      <div class="team-member">
+        <img src="/placeholder.svg?height=250&width=250" alt="Postdoc Placeholder 5" />
+        <div class="team-member-info">
+          <h3>Postdoc Name</h3>
+          <p>PostDoc</p>
+          <p>PhD, University Name</p>
+          <p>Research Focus: To be added</p>
         </div>
       </div>
     </div>
   </div>
 
-	<!-- Postdoc 3 -->
-    
-
   <!-- Graduate Students -->
   <div>
     <h3 class="team-heading">Graduate Students</h3>
 
-    <div class="team-grid">
+    <div class="team-grid graduate-grid">
       <!-- Existing students -->
       <div class="team-member">
-        <img src="images/Yilin.jpg" alt="Yilin Chen" />
+        <img src="/placeholder.svg?height=250&width=250" alt="Yilin Chen" />
         <div class="team-member-info">
           <h3>Yilin Chen, YorkU – PhD Candidate</h3>
-			<p>Co-Supervised with Dr. Jairo Diaz-Rodriguez</p>
           <p>Research: ML for Personalized Medicine</p>
         </div>
       </div>
 
-	<div class="team-member">
-        <img src="images/Ankita_Ghatak_photo.png" alt="Ankita_Ghatak_photo" />
-        <div class="team-member-info">
-          <h3>Ankita Ghatak, UofT – PhD Candidate</h3>
-          <p>Research: Deep learning for multimodal data in Liver Transplant</p>
-        </div>
-      </div>
-		
       <div class="team-member">
-        <img src="images/Hamda.jpg" alt="Hamda Altaf" />
+        <img src="/placeholder.svg?height=250&width=250" alt="Hamda Altaf" />
         <div class="team-member-info">
           <h3>Hamda Altaf, UofT – M.Sc Candidate</h3>
-			<p>Co-Supervised with Dr. Wendy Lou</p>
           <p>Research: ML for Mental Health</p>
         </div>
       </div>
 
-      
+      <div class="team-member">
+        <img src="/placeholder.svg?height=250&width=250" alt="Mark Asuncion" />
+        <div class="team-member-info">
+          <h3>Mark Asuncion, UofT – M.Sc Candidate</h3>
+          <p>Research: RL for Mental Health</p>
+        </div>
+      </div>
 
-      <!-- 🔹 NEW GRAD STUDENT TEMPLATE -->
-    <!--   <div class="team-member">
+      <!-- New Grad Student Template -->
+      <div class="team-member">
         <img src="/placeholder.svg?height=250&width=250" alt="New Graduate Student" />
         <div class="team-member-info">
           <h3>Student Name, University – Degree</h3>
           <p>Research: Short research description</p>
         </div>
-      </div> -->
+      </div>
+
+      <div class="team-member">
+        <img src="/placeholder.svg?height=250&width=250" alt="Graduate Student Placeholder 5" />
+        <div class="team-member-info">
+          <h3>Student Name, University – Degree</h3>
+          <p>Research: Short research description</p>
+        </div>
+      </div>
 
     </div>
   </div>
@@ -174,16 +266,16 @@
 
                 <!-- Row 3: Research Assistants -->
                 <h3 class="team-heading">Research Assistants</h3>
-                <div class="team-grid">
+                <div class="team-grid ra-grid">
                     <div class="team-member">
-                        <img src="images/Sama_Borhani.jpg" alt="Sama Borhani" />
+                        <img src="/placeholder.svg?height=100&width=100" alt="Zunaira Mehmood" />
                         <div class="team-member-info">
-                            <h3>Sama Borhani Gharehbolagh, YorkU - BSc</h3>
-                            <p>Research: RL for healthcare</p>
+                            <h3>Zunaira Mehmood, UoT - MSc</h3>
+                            <p>Research: Generative models for genomic data</p>
                         </div>
                     </div>
                     <div class="team-member">
-                        <img src="/images/alex.jpeg" alt="Jingwen Ji" />
+                        <img src="/placeholder.svg?height=100&width=100" alt="Jingwen Ji" />
                         <div class="team-member-info">
                             <h3>Jingwen Ji, UoT - MSc</h3>
                             <p>Research: RL for healthcare</p>
@@ -197,10 +289,34 @@
                         </div>
                     </div>
 		    <div class="team-member">
-                        <img src="images/Ahmed_Adnan.JPG" alt="Adnan Ahmed" />
+                        <img src="/placeholder.svg?height=100&width=100" alt="Adnan Ahmed" />
                         <div class="team-member-info">
                             <h3>Adnan Ahmed, YorkU - B.Tech CS</h3>
                             <p>Research: GenAI for healthcare</p>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <img src="/placeholder.svg?height=100&width=100" alt="Research Assistant Placeholder 5" />
+                        <div class="team-member-info">
+                            <h3>Student Name, University - Degree</h3>
+                            <p>Research: Short research description</p>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <img src="/placeholder.svg?height=100&width=100" alt="Research Assistant Placeholder 6" />
+                        <div class="team-member-info">
+                            <h3>Student Name, University - Degree</h3>
+                            <p>Research: Short research description</p>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <img src="/placeholder.svg?height=100&width=100" alt="Research Assistant Placeholder 7" />
+                        <div class="team-member-info">
+                            <h3>Student Name, University - Degree</h3>
+                            <p>Research: Short research description</p>
                         </div>
                     </div>
 		    
@@ -213,8 +329,6 @@
     <div class="alumni-container" style="flex: 1;">
         <h3 class="team-heading">Alumni</h3>
         <ul class="alumni-list">
-			<li>Zunaira Mahmood – M.Sc, UoT</li>
-			<li>Mark Asuncion – M.Sc, UoT</li>
             <li>Yiran Wang – M.Sc, UoT</li>
             <li>Yuxin Shi – M.Sc, UoT</li>
             <li>Feifan Zhang – M.Sc, UoT</li>
